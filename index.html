@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="weather.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index1.js"></script>
 </head>
 
 <body>
@@ -35,19 +37,24 @@
         </div>
         <div class="part2">
             <div class="searching">
-                <img style="display: block;width: 20px;height: 20px;" src="search.png">
-                <input type="text"
-                    style="width: 100px;height: 50%;background-color: #14279B;border: none;margin-top: -4px;font-size: 1.5rem;color: none;border-width: 0px;color: aliceblue;"
-                    placeholder="Search">
+                <button id="button12" type="button" style="background-color: #14279B;margin-top: -20px;border: none;"><img style="display: block;width: 20px;height: 20px;" src="search.png"></button>
+                <input type="text" id="searching"
+                    style="width: 100px;height: 50%;background-color: #14279B;border: none;margin-top: 0px;font-size: 1.5rem;color: none;border-width: 0px;color: aliceblue;"
+                    placeholder="Search"><br>
+               
             </div>
             <div class="straight">
                 <p><b>Weather</b> Forecast <img src="settings.png"></p>
+                <p class="important" style="font-size: 20px;">
+                    Location: -- &emsp; &emsp;
+                    Temperature: --
+                </p>
             </div>
             <div class="container3">
                 <div class="left">
                     <div class="card">
                         <img src="card1.png">
-                        
+
                     </div>
                     <div class="card">
                         <img src="card2.png">
@@ -61,7 +68,7 @@
                     </div>
                     <div class="card1">
                         <img style="width: 140px;height: 140px;margin-left: 10px;" src="circle2.png">
-                     
+
                     </div>
                 </div>
                 <div class="right2">
